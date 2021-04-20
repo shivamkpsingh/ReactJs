@@ -218,13 +218,42 @@
 
 // lecture 37:form in reactJs 
 
+// import React from 'react'
+// import reactDom from 'react-dom'
+// import App from './App'
+// import './index.css'
+// reactDom.render(
+//   <>
+//   <App/>
+//   </>,
+//   document.getElementById('root')
+// )
+
+// lecture 56: useContext hooks 
+
+// import React from 'react'
+// import reactDom from 'react-dom'
+// import App from './App'
+
+// reactDom.render(
+//   <>
+//     <App />
+//   </>,
+//   document.getElementById('root')
+// )
+
+
+
+// lecture 57: useContext hooks 
+
 import React from 'react'
 import reactDom from 'react-dom'
 import App from './App'
-import './index.css'
+
 reactDom.render(
   <>
-  <App/>
+    <App />
   </>,
   document.getElementById('root')
 )
+

@@ -12,6 +12,7 @@
 //     }
 //     const DecNum=()=>{
 //         setCount(count-1)
+
 //     }
 //     return(
 //         <>
@@ -77,7 +78,7 @@
 //     let bgColor="yellow";
 //     const[cColor,setColor]=useState(bgColor);
 
-   
+
 //     let changeText='Click Me';
 //     const[curText,upText]=useState(changeText);
 //     const bgChange=()=>{
@@ -99,23 +100,71 @@
 
 // lecture 37: form in reactJs 
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+
+// const App = () => {
+//     const [name, uName] = useState()
+//     const [setName, newName] = useState()
+//     const [lastName, ulastName] = useState()
+//     const [newlastName, newulastName] = useState()
+
+//     const anyThing = (event) => {
+//         uName(event.target.value)
+
+//     }
+//     const fAnyThing = (event) => {
+//         ulastName(event.target.value)
+//     }
+//     const onSubmits = (event) => {
+//         event.preventDefault();
+//         newName(name)
+//         newulastName(lastName)
+//     }
+//     return (
+//         <>
+//             <form onSubmit={onSubmits}>
+//                 <div>
+//                     <h1>Hello {setName} {newlastName}</h1>
+//                     <input type="text" placeholder="Enter Your First Name" onChange={anyThing} value={name} />
+//                     <input type="text" placeholder="Enter Your Last Name" onChange={fAnyThing} value={lastName} />
+//                     <button type='submit'>Submit</button>
+//                 </div>
+//             </form>
+
+//         </>
+//     )
+// }
+
+// export default App;
+
+
+// lecture 56: useContext hooks 
+
+// import React from 'react'
+// import ComA from './ComA'
+// const FirstName = React.createContext()
+// const LastName = React.createContext()
+// const App = () => {
+//     return (
+//         <>
+//             <FirstName.Provider value={"shivam"}>
+//                 <LastName.Provider value={"singh"}>
+//                 <ComA/>
+//                 </LastName.Provider>
+//             </FirstName.Provider>
+//         </>
+//     )
+// }
+// export default App;
+// export { FirstName, LastName }
+
+
+// lecture 57: useEffect hooks
+
 
 const App=()=>{
-    const[name,uName]=useState('')
-    const [setName,newName]=useState()
-
-    const anyThing=(event)=>{
-       uName(event.target.value)
-    }
-   const onSubmit=()=>{
-     newName(name)
-   }
-    return(
+    return (
         <>
-        <h1>Hello {setName}</h1>
-        <input   type="text" placeholder="Enter Your Name" className='hii' onChange={anyThing} value={name}/>
-        <button onClick={onSubmit}>Submit</button>
         </>
     )
 }

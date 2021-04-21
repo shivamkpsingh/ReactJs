@@ -246,14 +246,45 @@
 
 // lecture 57: useContext hooks 
 
-import React from 'react'
-import reactDom from 'react-dom'
-import App from './App'
+// import React from 'react'
+// import reactDom from 'react-dom'
+// import App from './App'
+// import './index.css'
 
-reactDom.render(
+// reactDom.render(
+//   <>
+//     <App />
+//   </>,
+//   document.getElementById('root')
+// )
+
+
+// lecture 58: pokemon api 
+// import React from 'react'
+// import reactDom from 'react-dom'
+// import ComA from './ComA'
+
+// reactDom.render(
+//   <>
+//   <ComA/>
+//   </>,
+//   document.getElementById('root')
+// )
+
+
+// lecture 59: react router 
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import {BrowserRouter} from 'react-router-dom'
+import './index.css'
+
+ReactDOM.render(
   <>
-    <App />
+  <BrowserRouter>
+  <App/>
+  </BrowserRouter>
   </>,
   document.getElementById('root')
 )
-

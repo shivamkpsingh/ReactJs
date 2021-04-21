@@ -1,5 +1,7 @@
 // import React, { useState } from 'react'
 
+
+
 // const App=()=>{
 
 //     // const state=useState()
@@ -160,11 +162,50 @@
 
 
 // lecture 57: useEffect hooks
+// import React, { useEffect } from 'react'
+// import { useState } from "react";
+
+// const App=()=>{
+//     const[num1,setNum1]=useState(0)
+//     const[num2,setNum2]=useState(0)
+
+//     const changeNum1=()=>{
+//         setNum1(num1+1)
+//     }
+//     const changeNum2=()=>{
+//         setNum2(num2+1)
+//     }
+//     useEffect(()=>{
+//         alert('hello!!!! how are you')
+//     },[num2])
+//     return (
+//         <>
+//         <button onClick={changeNum1}>first  {num1}</button>
+//         <br/>
+//         <button onClick={changeNum2}>second  {num2}</button>
+//         </>
+//     )
+// }
+
+// export default App;
 
 
-const App=()=>{
+// lecture 59: react router 
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import About from './About'
+import Contact from './Contact'
+import Error from './Error'
+import Navbar from './Navbar'
+const App = () => {
     return (
         <>
+            <Navbar />
+            <Switch>
+                <Route exact path='/' component={About} />
+                <Route path='/contact' component={Contact} />
+                <Route component={Error} />
+            </Switch>
         </>
     )
 }

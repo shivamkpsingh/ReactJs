@@ -197,13 +197,15 @@ import About from './About'
 import Contact from './Contact'
 import Error from './Error'
 import Navbar from './Navbar'
+import Search from './Search'
 const App = () => {
     return (
         <>
-            <Navbar />
+            <Navbar  />
             <Switch>
                 <Route exact path='/' component={About} />
                 <Route path='/contact' component={Contact} />
+                <Route path='/search' component={Search} />
                 <Route component={Error} />
             </Switch>
         </>
@@ -211,3 +213,7 @@ const App = () => {
 }
 
 export default App;
+
+
+// lecture 60: useParam hooks 
+
